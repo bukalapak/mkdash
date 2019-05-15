@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"os"
+	"time"
 
 	"github.com/bukalapak/mkdash/maker"
 	"github.com/bukalapak/mkdash/parser"
@@ -11,7 +12,7 @@ import (
 var (
 	GrafanaAuth    string
 	grafanaURL     = "https://grafana-mon.bldevs.info"
-	grafanaTimeOut = 2
+	grafanaTimeOut = 2 * time.Second
 )
 
 func main() {
